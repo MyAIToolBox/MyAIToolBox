@@ -68,16 +68,24 @@ nav select {
 <header>
   <h1>MyAIToolBox</h1>
   <nav>
-    <select id="projectMenu">
-      <option value="a">Select Project</option>
-      <a href="Compressor/index.html">Compressor</a>
-	  <a href="PosterMaker/index.html">Poster Maker</a>
-	  <a href="Upscale/index.html">Image Upscaler</a>
-	  <a href="AudioExtractor/index.html">Audio Extractor</a>
-  	  <a href="MemeGenerator/index.html">Meme Generator</a>
+    <select id="projectMenu" onchange="goToProject(this.value)">
+      <option value="">Select Project</option>
+      <option value="Compressor/">Compressor</option>
+      <option value="PosterMaker/">Poster Maker</option>
+      <option value="Upscale/">Image Upscaler</option>
+      <option value="AudioExtractor/">Audio Extractor</option>
+      <option value="MemeGenerator/">Meme Generator</option>
     </select>
   </nav>
 </header>
+
+<script>
+function goToProject(path) {
+  if(path) {
+    window.location.href = path;
+  }
+}
+</script>
 
 <div class="container">
   <h2>AI Tools</h2>

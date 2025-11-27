@@ -124,7 +124,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #dbeafe;
+    background: #808080;
     border-radius: 18px;
     overflow: hidden;
     padding: 8px;
@@ -185,11 +185,11 @@ canvas{
         </div>
       </div>
 
-      <!-- 1. MODE -->
+      <!-- 1. DESIGN OR UPLOAD -->
       <div class="field-group">
-        <label><span class="icon">🧾</span><span>1. Mode</span></label>
+        <label><span class="icon">🧾</span><span>1. Create OR Upload</span></label>
         <div class="mode-radio-group">
-          <label><input type="radio" name="mode" value="create" checked> Blank / designed here</label>
+          <label><input type="radio" name="mode" value="create" checked> Start designing</label>
           <label><input type="radio" name="mode" value="edit"> Edit existing poster (upload)</label>
         </div>
         <div id="editUploadWrapper" style="display:none;margin-top:6px;">
@@ -232,11 +232,11 @@ canvas{
         </div>
         <div class="two-col" style="margin-top:6px;">
           <div>
-            <div class="small-label">Color 1</div>
-            <input type="color" id="bgColor1" value="#ffffff">
+            <div class="small-label">Choose Solid Color</div>
+            <input type="color" id="bgColor1" value="#ADD8E6">
           </div>
           <div>
-            <div class="small-label">Color 2 (for gradient)</div>
+            <div class="small-label">Choose Gradient Color</div>
             <input type="color" id="bgColor2" value="#e5e7eb">
           </div>
         </div>
@@ -452,7 +452,7 @@ canvas{
 
       <!-- 5. IMAGES -->
       <div class="field-group">
-        <label><span class="icon">🖼️</span><span>5. Images & photos</span></label>
+        <label><span class="icon">🖼️</span><span>5. Upload mulitple Images to poster</span></label>
         <div class="two-col">
           <div>
             <div class="small-label">Add image</div>
